@@ -23,19 +23,29 @@ Git
 
 - Branching:
     create new branch, switch to new branch, create Pull Requests (highlights the changes):
-    1. Create new local branch:
-        a. Pycharm: Select New branch option from the current branch(bottom right)
+    a. Create new local branch:
+        1. Pycharm: Select New branch option from the current branch(bottom right)
            push each branch separately, creates: feature1-scen1 automatically
-        b. git bash:
+        2. git bash, git CLI (command line interface):
            git checkout -b 'new-branch-name'
            git add folder1/ scenario1.py
            git commit -m 'message for your commit'
            git push
            git push --set-upstream origin feature1-scen2
 
-    2. Collaboration in GitHub:
+    b. Collaboration in GitHub:
         a. creating a pull requests, get reviews and approval from the Sr. Engineer
         b. Merge your code in your branch to a master(main) branch
+
+    3. Get/doenload gitHub project to your local location and start the project:
+        cd/c/dev
+        mkdir temp
+        pwd
+        $c/dev/temp
+        git clone https://github.com/levelupcgi/pythonBasics.git
+        cd pythonBasics
+        git log # shows latest commit in the log
+        # than you can open in PyCharm start working on it as regular project
 
 - Ignore files:
        - create .gitignore (list of the files to be ignored by git)
@@ -58,5 +68,3 @@ git push -u origin main
 git remote add origin https://github.com/Olena1881/pythonBasics.git
 git branch -M main
 git push -u origin main
-
-
